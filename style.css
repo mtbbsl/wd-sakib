@@ -1,0 +1,46 @@
+:root {
+    --bgwhite: #fff;
+    --bggray: #2f2f2f;
+    --text: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    font-family: 'Grand Hotel', cursive;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    background-color: var(--bgwhite);
+    margin: 0 auto;
+}
+
+header {
+    height: 796px;
+    background-color: var(--bggray);
+    background-image: url("images/banner-right.png"), url("images/banner-left.jpg");
+    background-position: right top, left top;
+    background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.nav ul{
+    display: flex;
+}
+.nav li{
+    list-style: none;
+    margin-left: 2rem;
+    font-weight: 600;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--text);
+}
